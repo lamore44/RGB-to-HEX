@@ -174,5 +174,13 @@
             android:layout_height="wrap_content"
             android:text="Salin Kode HEX"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoToRegister"
+            android:text="Daftar Profil"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#607D8B"/>
+
     </LinearLayout>
 </ScrollView>

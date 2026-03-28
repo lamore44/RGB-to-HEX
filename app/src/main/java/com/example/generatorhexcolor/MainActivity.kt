@@ -7,7 +7,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-
+import android.content.Intent
 class MainActivity : AppCompatActivity() {
     private lateinit var seekBarR: SeekBar
     private lateinit var seekBarG: SeekBar
@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var colorPreview: android.view.View
     private lateinit var tvHexCode: TextView
     private lateinit var tvColorName: TextView
+    private lateinit var btnGoToRegister: Button
 
     // Simpan kode HEX terakhir untuk fitur copy
     private var currentHex = "#000000"
@@ -54,6 +55,12 @@ class MainActivity : AppCompatActivity() {
         btnCopy.setOnClickListener {
             copyToClipboard()
         }
+        btnGoToRegister = findViewById(R.id.btnGoToRegister)
+        btnGoToRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun setupSeekBarListeners() {
