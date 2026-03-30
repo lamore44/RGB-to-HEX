@@ -50,7 +50,15 @@ class RegisterActivity : AppCompatActivity() {
             "Teknik Arsitektur"
         )
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, prodiList)
+
+        val adapter = object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, prodiList){
+            override fun getView(position: Int, convertView: android.view.View?, parent: android.view.ViewGroup): android.view.View {
+                val view = super.getView(position, convertView, parent)
+                (view as android.widget.TextView).setTextColor(android.graphics.Color.parseColor("#212121"))
+                return view
+            }
+        }
+
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerProdi.adapter = adapter
 

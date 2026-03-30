@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:textSize="16sp"
-                    android:textColor="#212121"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:layout_marginBottom="12dp"/>
 
@@ -99,7 +99,7 @@
                     android:id="@+id/tvNim"
                     android:text="-"
                     android:textSize="16sp"
-                    android:textColor="#212121"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:layout_marginBottom="12dp"/>
 
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:textSize="16sp"
-                    android:textColor="#212121"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:layout_marginBottom="12dp"/>
 
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:textSize="16sp"
-                    android:textColor="#212121"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -170,7 +170,7 @@
                     android:id="@+id/tvHobi"
                     android:text="-"
                     android:textSize="16sp"
-                    android:textColor="#212121"/>
+                    android:textColor="#FFFFFF"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
